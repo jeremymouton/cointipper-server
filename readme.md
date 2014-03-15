@@ -18,4 +18,8 @@ Example:
 
 <code>/bitcoin/BTC/CoinTipper/1G967MwCf6XsMufpot3wHzbYnU3d2RevD5</code>
 
-<small>No trailing '/', and all params are required (in that order).</small>
+*No trailing '/', and all params are required (in that order).*
+
+For spaces in the "name" parameter, use a dash ("-"):
+
+<code>/bitcoin/BTC/CoinTipper-Tip-Jar/1G967MwCf6XsMufpot3wHzbYnU3d2RevD5</code>
