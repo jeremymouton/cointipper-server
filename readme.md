@@ -4,22 +4,25 @@ CoinTipper server api based on [jQuery.CoinTipper](https://github.com/jeremymout
 
 This version supports ANY coin.
 
+<img src="https://dl.dropboxusercontent.com/u/2848831/Screen%20Shot%202014-03-15%20at%206.09.45%20PM.png" alt="">
+
 ## Setup
 
 1. Clone the repo
 2. <code>~ cd</code> into the repo.
-3. <code>~ ruby app.rb</code>.
+3. <code>~ rackup -p 4567</code>.
 
 You can then access the button using the folling URL scheme:
 
-<code>/currency/ISO/name/address</code>
+<code>/type/currency/iso/address/label</code>
 
-Example:
+Examples:
 
-<code>/bitcoin/BTC/CoinTipper/1G967MwCf6XsMufpot3wHzbYnU3d2RevD5</code>
+<code>/tip/bitcoin/BTC/1G967MwCf6XsMufpot3wHzbYnU3d2RevD5/CoinTipper</code>
+<code>/donate/dogecoin/DOGE/DAxYkK3nGQPasscKYmbMswQJoV3h8y4aEW/CoinTipper</code>
 
 *No trailing '/', and all params are required (in that order).*
 
 For spaces in the "name" parameter, use a dash ("-"):
 
-<code>/bitcoin/BTC/CoinTipper-Tip-Jar/1G967MwCf6XsMufpot3wHzbYnU3d2RevD5</code>
+<code>/donate/dogecoin/DOGE/DAxYkK3nGQPasscKYmbMswQJoV3h8y4aEW/CoinTipper-Donation-Jar</code>

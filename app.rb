@@ -1,17 +1,19 @@
 require 'sinatra'
 
-get '/' do
-	"Pass in options in the url: /currency/ISO/name/address/"
-end
+class CoinTipper < Sinatra::Base
+  set :protection, :except => :frame_options
 
-get '/:currency/:iso/:name/:address' do
-  # "#{params[:name]}/#{params[:currency]}/#{params[:address]}/#{params[:label]}"
+  get '/' do
+  	"Pass in options in the url: type/currency/ISO/address/label"
+  end
   
-  @currency = params[:currency]
-  @iso      = params[:iso]
-  @name     = params[:name]
-  @address  = params[:address]
-
-  erb :index
-
+  get '/:type/:currency/:iso/:address/:label' do
+    @type     = params[:type]
+    @currency = params[:currency]
+    @iso      = params[:iso]
+    @address  = params[:address]
+    @label    = params[:label]
+  
+    erb :index
+  end
 end
