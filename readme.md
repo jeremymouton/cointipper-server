@@ -12,26 +12,25 @@ The code is hosted on Heroku, so you can use the widget in an embed code.
 
 [https://cointipper.herokuapp.com](https://cointipper.herokuapp.com)
 
-<pre>
-<embed src="https://cointipper.herokuapp.com/tip/bitcoin/BTC/1GMwCf6XsMufpot3wHzbYnU3d2RevD5/CoinTipper-Donation-Jar" height="38" width="150"> <embed src="https://cointipper.herokuapp.com/donate/dogecoin/DOGE/DAxYkK3nGQPasscKYmbMswQJoV3h8y4aEW/CoinTipper-Donation-Jar" height="38" width="150"> <embed src="https://cointipper.herokuapp.com/donate/kittehcoin/MEOW/KTxtYiB28YV5pBgy5GRwdFqWDx9RERVRNv/CoinTipper-Donation-Jar" height="38" width="150">
-</pre>
-
 You can create a button by using the following url scheme:
 
 <code>https://cointipper.herokuapp.com/type/currency/iso/address/label</code>
 
-##### Examples:
+##### Live examples:
 
-<code>/tip/bitcoin/BTC/1G967MwCf6XsMufpot3wHzbYnU3d2RevD5/CoinTipper</code>
-<code>/donate/dogecoin/DOGE/DAxYkK3nGQPasscKYmbMswQJoV3h8y4aEW/CoinTipper</code>
+<code>https://cointipper.herokuapp.com/tip/bitcoin/BTC/1G967MwCf6XsMufpot3wHzbYnU3d2RevD5/CoinTipper</code>
+<code>https://cointipper.herokuapp.com/donate/dogecoin/DOGE/DAxYkK3nGQPasscKYmbMswQJoV3h8y4aEW/CoinTipper</code>
+<code>https://cointipper.herokuapp.com/donate/kittehcoin/MEOW/KTxtYiB28YV5pBgy5GRwdFqWDx9RERVRNv/CoinTipper</code>
 
-*No trailing '/', and all params are required (in that order).*
+The buttons are generated using the 5 parameters in the url (/type/currency/iso/address/label). *No trailing '/', and all params are required (in that order).*
 
-### Embedded code
+### Use the url in an embedded code
 
 <pre>
 &lt;embed src="https://cointipper.herokuapp.com/tip/bitcoin/BTC/1GMwCf6XsMufpot3wHzbYnU3d2RevD5/CoinTipper-Donation-Jar" height="38" width="150">
 </pre>
+
+Copy/paste this where you want your button to appear, and replace the parameters with your own. 
 
 #### Spaces in the label
 
