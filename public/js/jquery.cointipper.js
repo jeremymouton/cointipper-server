@@ -87,6 +87,8 @@ function buildDonateModalHtml(currency, iso, address, label) {
 		var amount = 500;
 	} else if (currency === "kittehcoin") {
 		var amount = 5000;
+	} else if (currency === "gamecredits") {
+		var amount = 0.0001;	
 	} else {
 		var amount = '';
 	}
